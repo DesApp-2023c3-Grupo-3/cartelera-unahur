@@ -1,4 +1,4 @@
-name: Publish GitHub Package
+name: Publish NPM Package
 
 on:
   push:
@@ -16,14 +16,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18 # Asegúrate de usar una versión de Node.js compatible con tu proyecto
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
 
-      - name: Authenticate with GitHub Package Registry
-        run: echo "//npm.pkg.github.com/:_authToken=\${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-
-      - name: Publish to GitHub Package Registry
-        run: npm publish --registry=https://npm.pkg.github.com
-
+      - name: Publish to npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > ~/.npmrc
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
