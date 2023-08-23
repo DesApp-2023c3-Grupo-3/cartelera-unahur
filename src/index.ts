@@ -1,1 +1,1 @@
-export * from './dto/genero';
+export * from './dto/contacto';
