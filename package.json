@@ -1,9 +1,9 @@
 {
   "name": "@unahur-cartelera",
-  "author": "Tu Nombre",
+  "author": "ValentinoChiappanni",
   "module": "dist/unahur-cartelera.esm.js",
-  "version": "0.1.0",  // Cambia la versión según corresponda
-  "license": "MIT",  // O cambia la licencia según corresponda
+  "version": "0.1.1",
+  "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -11,7 +11,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=14"  // Cambia la versión de Node.js si es necesario
+    "node": ">=14"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -25,11 +25,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/unahur-cartelera.cjs.production.min.js", // Cambia el nombre del archivo según corresponda
+      "path": "dist/unahur-cartelera.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/unahur-cartelera.esm.js", // Cambia el nombre del archivo según corresponda
+      "path": "dist/unahur-cartelera.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -43,7 +43,7 @@
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",
-    "typescript": "^4.3.5"  // Actualiza la versión de TypeScript si es necesario
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "class-transformer": "^0.5.1",
