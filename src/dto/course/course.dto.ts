@@ -1,5 +1,7 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
+import { IdIdentityDTO } from '../commons/Id-Identity.dto';
+
 
 export class CourseDto {
   @IsNotEmpty()
@@ -28,4 +30,29 @@ export class CourseDto {
     example: 'contraseña123',
   })
   public readonly password: string;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  classroom?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  user?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  sector?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  schedule?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  subject?: IdIdentityDTO;
 }
