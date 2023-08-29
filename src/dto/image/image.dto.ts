@@ -1,5 +1,6 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
+import { IdIdentityDTO } from '../commons/Id-Identity.dto';
 
 export class ImageDto {
   @IsNotEmpty()
@@ -13,6 +14,26 @@ export class ImageDto {
     description: 'Nombre de la imagen',
     example: 'Foto de Edificio Malvinas',
   })
-  public readonly name: string;
+  public name: string;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  imageType?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  user?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  sector?: IdIdentityDTO;
+
+  @IsOptional()
+  @ApiProperty({
+  })
+  schedule?: IdIdentityDTO;
 
 }
