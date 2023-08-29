@@ -1,5 +1,6 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
+import { IdIdentityDTO } from '../commons/Id-Identity.dto';
 
 export class UserDto {
   @IsNotEmpty()
@@ -27,4 +28,8 @@ export class UserDto {
   })
   public password: string;
 
+  @IsOptional()
+  @ApiProperty({
+  })
+  role?: IdIdentityDTO;
 }
