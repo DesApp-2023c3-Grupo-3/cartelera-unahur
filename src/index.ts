@@ -6,3 +6,7 @@ export * from './dto/image-type';
 export * from './dto/image';
 export * from './dto/subject';
 export * from './dto/user';
+export * from './dto/classroom';
+export * from './dto/course-screen';
+export * from './dto/role';
+export * from './dto/screen';
