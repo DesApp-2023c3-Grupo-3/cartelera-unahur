@@ -14,6 +14,6 @@ export class RoleDto {
     description: 'Nombre del rol',
     example: 'Gestión Estudiantil',
   })
-  public readonly name: string;
+  public name: string;
 
 }

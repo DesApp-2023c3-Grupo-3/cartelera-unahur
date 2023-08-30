@@ -5,7 +5,7 @@ import { ClassroomDto } from "../classroom";
 import { SubjectDto } from "../subject";
 import { ScheduleDto } from "../schedule";
 import { SectorDto } from "../sector";
-import { UserDto } from "../user";
+import { ResponseUserDto } from "../user";
 
 export class ResponseCourseDto extends OmitType(CourseDto, ['classroom','user','sector','schedule','subject'] as const) {
     @IsNotEmptyObject({ nullable: true }, )
@@ -18,7 +18,7 @@ export class ResponseCourseDto extends OmitType(CourseDto, ['classroom','user','
     @IsOptional()
     @ApiProperty({
     })
-    user: UserDto;
+    user: ResponseUserDto;
 
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()

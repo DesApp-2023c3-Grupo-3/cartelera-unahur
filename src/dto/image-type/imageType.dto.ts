@@ -13,6 +13,6 @@ export class ImageTypeDto {
     description: 'Nombre de la imagen',
     example: 'Foto de Edificio Malvinas',
   })
-  public readonly name: string;
+  public name: string;
 
 }

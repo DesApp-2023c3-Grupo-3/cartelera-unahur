@@ -13,13 +13,13 @@ export class SectorDto {
     description: 'Nombre del sector',
     example: 'Edificio Malvinas',
   })
-  public readonly name: string;
+  public name: string;
 
   @IsNotEmpty()
   @ApiProperty({
     description: 'Tópico del sector',
     example: 'Materias',
   })
-  public readonly topic: string;
+  public topic: string;
 
 }

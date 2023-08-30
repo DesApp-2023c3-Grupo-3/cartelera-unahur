@@ -14,6 +14,6 @@ export class ClassroomDto {
     description: 'Nombre del aula',
     example: 'Aula superior',
   })
-  public readonly name: string;
+  public name: string;
 
 }

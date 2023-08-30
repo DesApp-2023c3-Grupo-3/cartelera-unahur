@@ -13,29 +13,29 @@ export class ScheduleDto {
     description: 'Fecha de inicio del cronograma',
     example: 2023-9-4,
   })
-  public readonly startDate: Date;
+  public startDate: Date;
 
   @ApiProperty({
     description: 'Fecha de finalización del cronograma',
     example: 2023-9-12,
   })
-  public readonly endDate: Date;
+  public endDate: Date;
 
   @ApiProperty({
     description: 'Horario de inicio del cronograma',
     example: '9:00',
   })
-  public readonly startHour: string;
+  public startHour: string;
 
   @ApiProperty({
     description: 'Horario de finalización del cronograma',
     example: '16:00',
   })
-  public readonly endHour: string;
+  public endHour: string;
 
   @ApiProperty({
     description: 'Días programados',
     example: '2023-9-4, 2023-9-6, 2023-9-10',
   })
-  public readonly scheduleDays: string;
+  public scheduleDays: string;
 }
