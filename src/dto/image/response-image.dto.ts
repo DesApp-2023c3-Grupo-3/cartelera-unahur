@@ -4,7 +4,7 @@ import { ImageDto } from "./image.dto";
 import { ImageTypeDto } from "../image-type";
 import { ScheduleDto } from "../schedule";
 import { SectorDto } from "../sector";
-import { UserDto } from "../user";
+import { ResponseUserDto } from "../user";
 
 export class ResponseImageDto extends OmitType(ImageDto, ['imageType','user','sector','schedule'] as const) {
     @IsNotEmptyObject({ nullable: true }, )
@@ -17,7 +17,7 @@ export class ResponseImageDto extends OmitType(ImageDto, ['imageType','user','se
     @IsOptional()
     @ApiProperty({
     })
-    user: UserDto;
+    user: ResponseUserDto;
 
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()
