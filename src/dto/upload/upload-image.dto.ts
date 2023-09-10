@@ -1,6 +1,6 @@
 import { ApiProperty } from "../../nest/swagger/utils";
 
-export class UploadCargoResponseDTO {
+export class UploadImageResponseDTO {
   @ApiProperty()
   originalName: string;
   @ApiProperty()
