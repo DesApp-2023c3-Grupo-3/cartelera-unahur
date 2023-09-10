@@ -9,3 +9,4 @@ export * from './dto/classroom';
 export * from './dto/course-screen';
 export * from './dto/role';
 export * from './dto/screen';
+export * from './dto/upload';
