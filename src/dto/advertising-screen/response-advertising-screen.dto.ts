@@ -4,12 +4,12 @@ import { AdvertisingScreenDto } from "./advertising-screen.dto";
 import {  ResponseAdvertisingDto } from "../advertising";
 import { ResponseScreenDto } from "../screen";
 
-export class ResponseImageScreenDto extends OmitType(AdvertisingScreenDto, ['image','screen'] as const) {
+export class ResponseImageScreenDto extends OmitType(AdvertisingScreenDto, ['advertising','screen'] as const) {
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()
     @ApiProperty({
     })
-    image: ResponseAdvertisingDto;
+    advertising: ResponseAdvertisingDto;
 
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()

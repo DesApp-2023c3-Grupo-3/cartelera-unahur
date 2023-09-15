@@ -13,7 +13,7 @@ export class AdvertisingScreenDto {
   @IsOptional()
   @ApiProperty({
   })
-  image?: IdIdentityDTO;
+  advertising?: IdIdentityDTO;
 
   @IsOptional()
   @ApiProperty({

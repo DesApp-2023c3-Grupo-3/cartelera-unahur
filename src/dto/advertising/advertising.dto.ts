@@ -19,7 +19,7 @@ export class AdvertisingDto {
   @IsOptional()
   @ApiProperty({
   })
-  imageType?: IdIdentityDTO;
+  advertisingType?: IdIdentityDTO;
 
   @IsOptional()
   @ApiProperty({
