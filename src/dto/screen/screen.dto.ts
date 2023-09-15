@@ -10,13 +10,6 @@ export class ScreenDto {
   })
   public readonly id: number;
 
-  @IsNotEmpty()
-  @ApiProperty({
-    description: 'Suscripción en la pantalla',
-    example: 'Tecnicatura Universitaria en Programación',
-  })
-  public subscription: string;
-
   @IsOptional()
   @ApiProperty({
   })
