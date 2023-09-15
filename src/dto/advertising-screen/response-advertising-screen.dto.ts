@@ -1,15 +1,15 @@
 import { IsNotEmptyObject, IsOptional } from "class-validator";
 import { ApiProperty, OmitType } from "../../nest/swagger/utils";
-import { ImageScreenDto } from "./image-screen.dto";
-import {  ResponseImageDto } from "../image";
+import { AdvertisingScreenDto } from "./advertising-screen.dto";
+import {  ResponseAdvertisingDto } from "../advertising";
 import { ResponseScreenDto } from "../screen";
 
-export class ResponseImageScreenDto extends OmitType(ImageScreenDto, ['image','screen'] as const) {
+export class ResponseImageScreenDto extends OmitType(AdvertisingScreenDto, ['image','screen'] as const) {
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()
     @ApiProperty({
     })
-    image: ResponseImageDto;
+    image: ResponseAdvertisingDto;
 
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()

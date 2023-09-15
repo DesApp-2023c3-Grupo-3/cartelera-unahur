@@ -2,7 +2,7 @@ import { IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
 import { IdIdentityDTO } from '../commons/Id-Identity.dto';
 
-export class ImageDto {
+export class AdvertisingDto {
   @IsNotEmpty()
   @ApiProperty({
     description: 'ID de la imagen',
