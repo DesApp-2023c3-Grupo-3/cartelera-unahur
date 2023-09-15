@@ -2,7 +2,7 @@
   "name": "cartelera-unahur",
   "author": "ValentinoChiappanni",
   "module": "dist/unahur-cartelera.esm.js",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
