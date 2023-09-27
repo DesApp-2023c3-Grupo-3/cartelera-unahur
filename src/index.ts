@@ -12,3 +12,4 @@ export * from './dto/role';
 export * from './dto/screen';
 export * from './dto/upload';
 export * from './dto/socket';
+export * from './dto/advertising-schedule';
