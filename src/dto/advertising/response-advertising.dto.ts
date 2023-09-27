@@ -2,11 +2,11 @@ import { IsNotEmptyObject, IsOptional } from "class-validator";
 import { ApiProperty, OmitType } from "../../nest/swagger/utils";
 import { AdvertisingDto } from "./advertising.dto";
 import { AdvertisingTypeDto } from "../advertising-type";
-import { ScheduleDto } from "../schedule";
 import { SectorDto } from "../sector";
 import { ResponseUserDto } from "../user";
+import { ScheduleDto } from "../schedule";
 
-export class ResponseAdvertisingDto extends OmitType(AdvertisingDto, ['advertisingType','user','sector','schedule'] as const) {
+export class ResponseAdvertisingDto extends OmitType(AdvertisingDto, ['advertisingType','user','sector','schedules'] as const) {
     @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()
     @ApiProperty({
@@ -29,6 +29,6 @@ export class ResponseAdvertisingDto extends OmitType(AdvertisingDto, ['advertisi
     @IsOptional()
     @ApiProperty({
     })
-    schedule: ScheduleDto;
+    schedules: Array<ScheduleDto>;
   
 }
