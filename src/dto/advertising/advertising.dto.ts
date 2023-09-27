@@ -1,6 +1,7 @@
 import { IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
 import { IdIdentityDTO } from '../commons/Id-Identity.dto';
+import { ScheduleDto } from '../schedule';
 
 export class AdvertisingDto {
   @IsNotEmpty()
@@ -34,6 +35,6 @@ export class AdvertisingDto {
   @IsOptional()
   @ApiProperty({
   })
-  schedule?: IdIdentityDTO;
+  advertisingSchedules?: ScheduleDto[];
 
 }
