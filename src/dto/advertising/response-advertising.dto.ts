@@ -29,6 +29,6 @@ export class ResponseAdvertisingDto extends OmitType(AdvertisingDto, ['advertisi
     @IsOptional()
     @ApiProperty({
     })
-    schedules: Array<ScheduleDto>;
+    schedules: ScheduleDto[];
   
 }
