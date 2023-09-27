@@ -34,6 +34,6 @@ export class AdvertisingDto {
 
   @ApiProperty({
   })
-  schedules: ScheduleDto[];
+  schedules: Array<ScheduleDto>;
 
 }
