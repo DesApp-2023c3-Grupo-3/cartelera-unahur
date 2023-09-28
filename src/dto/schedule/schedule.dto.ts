@@ -25,17 +25,17 @@ export class ScheduleDto {
     description: 'Horario de inicio del cronograma',
     example: '9:00',
   })
-  public startHour: string;
+  public startHour: Date;
 
   @ApiProperty({
     description: 'Horario de finalización del cronograma',
     example: '16:00',
   })
-  public endHour: string;
+  public endHour: Date;
 
   @ApiProperty({
     description: 'Días programados',
     example: '2023-9-4, 2023-9-6, 2023-9-10',
   })
-  public scheduleDays: string;
+  public dayCode: string;
 }
