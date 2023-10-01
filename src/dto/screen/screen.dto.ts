@@ -10,6 +10,10 @@ export class ScreenDto {
   })
   public readonly id: number;
 
+  @ApiProperty({
+  })
+  templeteId: string;
+
   @IsOptional()
   @ApiProperty({
   })
