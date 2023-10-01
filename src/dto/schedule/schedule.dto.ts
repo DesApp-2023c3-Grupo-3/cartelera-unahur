@@ -10,7 +10,7 @@ export class ScheduleDto {
   public readonly id: number;
 
   @ApiProperty({
-    description: 'Fecha de inicio del cronograma',type:new Date()
+    description: 'Fecha de inicio del cronograma',type: () => Date
   })
   public startDate: Date;
 
