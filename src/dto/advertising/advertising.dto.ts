@@ -32,7 +32,7 @@ export class AdvertisingDto {
   })
   sector?: IdIdentityDTO;
 
-  @ApiProperty({type: ()=>  ScheduleDto
+  @ApiProperty({type: [ScheduleDto]
   })
   schedules: ScheduleDto[];
 
