@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsOptional } from 'class-validator';
+import { ArrayNotEmpty, IsNotEmpty, IsOptional } from 'class-validator';
 import { ApiProperty } from '../../nest/swagger/utils';
 import { IdIdentityDTO } from '../commons/Id-Identity.dto';
 import {  ScheduleDto } from '../schedule';
@@ -31,7 +31,8 @@ export class AdvertisingDto {
   @ApiProperty({
   })
   sector?: IdIdentityDTO;
-
+  
+@ArrayNotEmpty()
   @ApiProperty({
   })
   schedules: ScheduleDto[];

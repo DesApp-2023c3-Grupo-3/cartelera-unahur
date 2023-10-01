@@ -16,25 +16,25 @@ export class ScheduleDto {
 
   @ApiProperty({
     description: 'Fecha de finalización del cronograma',
-    example: 2023-9-12,
+    type: () => Date,
   })
   public endDate: Date;
 
   @ApiProperty({
     description: 'Horario de inicio del cronograma',
-    example: '9:00',
+    type: () => Date,
   })
   public startHour: Date;
 
   @ApiProperty({
     description: 'Horario de finalización del cronograma',
-    example: '16:00',
+    type: () => Date,
   })
   public endHour: Date;
 
   @ApiProperty({
     description: 'Días programados',
-    example: '2023-9-4, 2023-9-6, 2023-9-10',
+    example: '1',
   })
   public dayCode: string;
 }

@@ -25,7 +25,6 @@ export class ResponseAdvertisingDto extends OmitType(AdvertisingDto, ['advertisi
     })
     sector: SectorDto;
 
-    @IsNotEmptyObject({ nullable: true }, )
     @IsOptional()
     @ApiProperty({
     })
