@@ -14,6 +14,10 @@ export class ScreenDto {
   })
   templeteId: string;
 
+  @ApiProperty({
+  })
+  subscription: string;
+
   @IsOptional()
   @ApiProperty({
   })
