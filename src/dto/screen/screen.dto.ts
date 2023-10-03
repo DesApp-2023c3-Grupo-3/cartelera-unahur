@@ -18,6 +18,14 @@ export class ScreenDto {
   })
   subscription: string;
 
+  @ApiProperty({
+  })
+  courseIntervalTime: number;
+
+  @ApiProperty({
+  })
+  advertisingIntervalTime: number;
+
   @IsOptional()
   @ApiProperty({
   })
