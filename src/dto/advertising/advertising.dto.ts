@@ -17,6 +17,12 @@ export class AdvertisingDto {
   })
   public name: string;
 
+  @ApiProperty({
+    description: 'Payload del aviso',
+    example: 'http://youtube.com/watch?v=1',
+  })
+  public payload: string;
+
   @IsOptional()
   @ApiProperty({
   })
