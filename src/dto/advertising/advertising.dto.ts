@@ -27,13 +27,7 @@ export class AdvertisingDto {
   })
   user?: IdIdentityDTO;
 
-  @IsOptional()
-  @ApiProperty({
-  })
-  sector?: IdIdentityDTO;
-
-  @ApiProperty({type: [ScheduleDto]
-  })
+  @ApiProperty({type: [ScheduleDto]})
   schedules: ScheduleDto[];
 
 }

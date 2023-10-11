@@ -4,6 +4,7 @@ export * from './dto/course';
 export * from './dto/advertising-type';
 export * from './dto/advertising';
 export * from './dto/advertising-screen';
+export * from './dto/advertising-sector';
 export * from './dto/subject';
 export * from './dto/user';
 export * from './dto/classroom';
