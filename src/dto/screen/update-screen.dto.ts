@@ -1,4 +1,4 @@
-import { PartialType } from '../../nest/swagger/utils';
-import { CreateScreenDto } from './create-screen.dto';
+import { OmitType } from '../../nest/swagger/utils';
+import { ScreenDto } from './screen.dto';
 
-export class UpdateScreenDto extends PartialType(CreateScreenDto) {}
+export class UpdateScreenDto extends OmitType(ScreenDto, ['subscription', 'sector'] as const) {}
