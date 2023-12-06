@@ -3,7 +3,7 @@ import { ScreenDto } from './screen.dto';
 
 export class UpdateScreenDto extends OmitType(ScreenDto, ['sector'] as const) {
   sector: {
-    id: string,
+    id: number,
     topic: string,
     name: string
   };
