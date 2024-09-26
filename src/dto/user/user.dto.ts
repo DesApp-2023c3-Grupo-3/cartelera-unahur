@@ -17,6 +17,12 @@ export class UserDto {
   public name: string;
 
   @ApiProperty({
+    description: 'Id de keycloak',
+    example: 'a1b2c3',nullable:true
+  })
+  public idKeycloak: string;
+
+  @ApiProperty({
     description: 'DNI del usuario',
     example: "43567876",
   })
