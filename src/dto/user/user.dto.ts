@@ -30,7 +30,7 @@ export class UserDto {
 
   @ApiProperty({
     description: 'Contraseña del usuario',
-    example: "1234",
+    example: "1234",nullable:true
   })
   public password: string;
 
